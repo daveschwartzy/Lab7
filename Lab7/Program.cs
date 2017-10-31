@@ -55,9 +55,9 @@ namespace Lab7
         //Lists out the students so the user knows what number corresponds to what student
         private static void ListStudents(string[] Students)
         {
-            foreach (string firstname in Students)
+            for (int i = 0; i < Students.Length; i++)
             {
-                Console.WriteLine(firstname);
+                Console.WriteLine($"{i + 1}. {Students[i]}");
             }
         }
         //method that asks for user input of what info they would like to know about selected student
